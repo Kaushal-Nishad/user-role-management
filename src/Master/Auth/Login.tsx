@@ -44,7 +44,7 @@ const Login: React.FC = () => {
             // console.log("Access Token:", token); 
             localStorage.setItem('token',token);
             toast.success('Login successful!');
-            navigate('/dashboard');
+            navigate('/');
         } else {
             toast.error('Invalid email or password');
         }
